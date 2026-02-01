@@ -1,6 +1,6 @@
 # md2docx-skill
 
-A Cursor/Claude Agent Skill for converting Markdown to professionally formatted Word (DOCX) documents.
+A Agent Skill for converting Markdown to professionally formatted Word (DOCX) documents.
 
 ## Overview
 
@@ -16,29 +16,35 @@ This skill enables AI coding assistants (Cursor, Claude Code, etc.) to convert M
 
 ## Installation
 
-### For Cursor
-
-1. Copy the `skills/md2docx` folder to your project's `.cursor/skills/` directory:
+### Quick Install
 
 ```bash
-cp -r skills/md2docx /path/to/your/project/.cursor/skills/
+npx skills add https://github.com/Yorick-Ryu/md2docx-skill --skill md2docx
 ```
 
-2. (Optional) Set your API key:
+(Optional) Set your API key:
 
 ```bash
 export DEEP_SHARE_API_KEY="your_api_key_here"
 ```
 
-### For Claude Code
+### Manual Install
 
-1. Copy the `skills/md2docx` folder to your project's `.claude/skills/` directory:
+Clone the repository and copy the skill to your project:
+
+**For Cursor:**
 
 ```bash
-cp -r skills/md2docx /path/to/your/project/.claude/skills/
+git clone https://github.com/Yorick-Ryu/md2docx-skill.git
+cp -r md2docx-skill/skills/md2docx /path/to/your/project/.cursor/skills/
 ```
 
-2. (Optional) Set your API key as described above.
+**For Claude Code:**
+
+```bash
+git clone https://github.com/Yorick-Ryu/md2docx-skill.git
+cp -r md2docx-skill/skills/md2docx /path/to/your/project/.claude/skills/
+```
 
 ## Project Structure
 
